@@ -1,0 +1,330 @@
+.loading {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.932);
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  animation: disparition 1s normal forwards 3s ;
+  animation: withnone 0s normal forwards 4s;
+
+  .letter {
+    top: 5%;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin-top: 250px;
+    animation: flash 1.2s linear infinite;
+  }
+
+  @keyframes flash {
+    0% {
+      color: $Primaire;
+      text-shadow: 0 0 7px gray;
+    }
+    90% {
+      color: #484848;
+      text-shadow: none;
+    }
+    100% {
+      color: $Primaire;
+      text-shadow: 0 0 7px #fff900;
+    }
+  }
+  .letter:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .letter:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .letter:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .letter:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .letter:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .letter:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .letter:nth-child(7) {
+    animation-delay: 0.7s;
+  } 
+}
+
+@keyframes disparition {
+  from {
+   opacity: 1;
+  }
+  to {
+    opacity: 0;  
+  }
+}
+@keyframes withnone {
+  from {
+  width: 100%;
+  }
+  to {
+    width: 0%; 
+  }
+}
+//*----------header-------------
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 2px 10px 0px rgb(163, 162, 162);
+
+  .img_container {
+    width: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+// <!-- -----parite localisation-------- -->
+nav {
+  .localisation {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.133);
+    box-shadow: 0px 0px 0px 0px rgb(163, 162, 162);
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin: 15px;
+        font-family: $roboto;
+        font-weight: bold;
+        font-size: 18px;
+
+        .fa {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  //<!-- -----parite reservation-------- -->
+  .reservation_containt {
+    background-color: rgba(128, 128, 128, 0.061);
+    display: flex;
+    justify-content: center;
+
+    .info_reserv {
+      width: 90%;
+      text-align: center;
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px;
+      }
+      button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background: rgb(255, 121, 218);
+        background: linear-gradient(
+          172deg,
+          rgba(255, 121, 217, 0.8) 27%,
+          rgba(147, 86, 220, 0.9447129193474265) 58%
+        );
+        width: 220px;
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        font-size: 17px;
+        color: white;
+      }
+    }
+  }
+  // <!-- -----parite fonctionnement-------- -->
+  .fonctionnement {
+    .container_fontionnement {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1 {
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .navigation_link {
+        .link {
+          display: flex;
+          align-items: center;
+
+          .number {
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $Primaire;
+            color: $white;
+            position: relative;
+            left: 12px;
+            top: -12px;
+          }
+          .icon_text {
+            width: 90%;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px -1px gray;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            &:hover {
+              background-color: $Primaire_hover;
+              transition: 0.5s ease-in-out;
+            }
+
+            .fa {
+               font-size: 25px;
+              color: gray;
+            }
+
+            .text {
+              font-size: 19px;
+              font-weight: bold;
+            }
+          }
+          .icon_text:hover .fa {
+            color: $Primaire;
+          }
+        }
+      }
+    }
+  }
+  //<!-- -----parite restau-------- -->
+  .container_restau {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .restau_img {
+      box-shadow: 0 2px 8px -1px gray;
+      margin-bottom: 25px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      .image {
+        width: 100%;
+        height: 180px;
+        position: relative;
+
+        .btnNew {
+          position: absolute;
+          top: 10%;
+          left: 65%;
+          width: 30%;
+          height: 40px;
+          background-color: $Tertiaire;
+          color: green;
+          font-weight: bold;
+          font-size: 18px;
+          border: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+      }
+      .info_restau {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      
+
+        .nom_restau {
+          overflow: hidden;
+          margin-left: 15px;
+          padding: 5px;
+
+          h2 {
+            font-size: 25px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+          p {
+            margin-bottom: 15px;
+          }
+        }
+        .fa-heart {
+          margin-right: 15px;
+          font-size: 25px;
+          cursor: pointer;
+          
+
+          &:hover {
+            color: $Primaire;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: gray;
+
+  h2 {
+    font-family: $shrikhand;
+    color: $white;
+    padding-top: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container_footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+
+    .footer_info {
+      display: flex;
+      margin-top: 8px;
+      color: $white;
+      font-size: 20px;
+      font-weight: bold;
+
+      .fa {
+        margin-right: 15px;
+      }
+    }
+  }
+}
