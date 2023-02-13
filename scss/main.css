@@ -302,9 +302,13 @@ nav .container_restau .restau_img .info_restau .nom_restau h2 a {
 nav .container_restau .restau_img .info_restau .nom_restau p {
   margin-bottom: 15px;
 }
+nav .container_restau .restau_img .info_restau .icon_heard{
+  -webkit-text-stroke: 1px black;
+}
 nav .container_restau .restau_img .info_restau .fa-heart {
   margin-right: 15px;
   font-size: 25px;
+  color: white;
   cursor: pointer;
 }
 nav .container_restau .restau_img .info_restau .fa-heart:hover {
@@ -375,11 +379,15 @@ nav .menu .tittle {
 nav .menu .tittle h2 {
   font-family: Shrikhand;
 }
+nav .menu .tittle .icon_heard{
+  -webkit-text-stroke: 1px black;
+}
 nav .menu .tittle .fa {
   font-size: 25px;
+  color: white;
 }
 nav .menu .tittle .fa:hover {
-  background-color: #99E2D0;
+ color: #99E2D0;
   cursor: pointer;
 }
 nav .menu .container_plats {

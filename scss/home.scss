@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-  animation: disparition 1s normal forwards 3s ;
+  animation: disparition 1s normal forwards 3s;
   animation: withnone 0s normal forwards 4s;
 
   .letter {
@@ -53,23 +53,23 @@
   }
   .letter:nth-child(7) {
     animation-delay: 0.7s;
-  } 
+  }
 }
 
 @keyframes disparition {
   from {
-   opacity: 1;
+    opacity: 1;
   }
   to {
-    opacity: 0;  
+    opacity: 0;
   }
 }
 @keyframes withnone {
   from {
-  width: 100%;
+    width: 100%;
   }
   to {
-    width: 0%; 
+    width: 0%;
   }
 }
 //*----------header-------------
@@ -197,7 +197,7 @@ nav {
             }
 
             .fa {
-               font-size: 25px;
+              font-size: 25px;
               color: gray;
             }
 
@@ -263,8 +263,6 @@ nav {
         justify-content: space-between;
         align-items: center;
 
-      
-
         .nom_restau {
           overflow: hidden;
           margin-left: 15px;
@@ -284,16 +282,19 @@ nav {
             margin-bottom: 15px;
           }
         }
-        .fa-heart {
-          margin-right: 15px;
-          font-size: 25px;
-          cursor: pointer;
-          
-
-          &:hover {
-            color: $Primaire;
+        .icon_heard{
+          .fa {
+            margin-right: 15px;
+            font-size: 25px;
+            cursor: pointer;
+  
+            &:hover {
+              // color: $Primaire;
+              color: red;
+            }
           }
         }
+       
       }
     }
   }
