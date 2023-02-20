@@ -338,6 +338,12 @@ footer .container_footer .footer_info {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  
+}
+footer .container_footer .footer_info a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
 }
 footer .container_footer .footer_info .fa {
   margin-right: 15px;
