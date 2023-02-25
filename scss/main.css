@@ -168,6 +168,7 @@ nav .reservation_containt .info_reserv h1 {
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: bold;
+  font-family: Roboto;
 }
 nav .reservation_containt .info_reserv p {
   font-size: 20px;
@@ -193,6 +194,7 @@ nav .fonctionnement .container_fontionnement h1 {
   margin-left: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
+  font-family: Roboto;
 }
 nav .fonctionnement .container_fontionnement .navigation_link .link {
   display: flex;
@@ -246,6 +248,8 @@ nav .container_restau {
 nav .container_restau h1 {
   margin-top: 25px;
   margin-bottom: 25px;
+  font-family: Roboto;
+  font-size: 25px;
 }
 nav .container_restau .restau_img {
   box-shadow: 0 2px 8px -1px gray;
@@ -291,7 +295,7 @@ nav .container_restau .restau_img .info_restau .nom_restau {
   padding: 5px;
 }
 nav .container_restau .restau_img .info_restau .nom_restau h2 {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -316,7 +320,7 @@ nav .container_restau .restau_img .info_restau .fa-heart:hover {
 }
 
 footer {
-  background-color: gray;
+  background-color: rgb(49, 48, 48);
 }
 footer h2 {
   font-family: Shrikhand;
@@ -325,6 +329,7 @@ footer h2 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 20px;
 }
 footer .container_footer {
   width: 90%;
@@ -336,9 +341,7 @@ footer .container_footer .footer_info {
   display: flex;
   margin-top: 8px;
   color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  
+  font-size: 18px;
 }
 footer .container_footer .footer_info a{
   text-decoration: none;
@@ -447,11 +450,16 @@ nav .menu .container_plats .info_menu .plat_prix .contain {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+nav .menu .container_plats .info_menu h3{
+font-size: 17px;
+font-weight: 100;
+}
 nav .menu .container_plats .info_menu .plat_prix h2 {
   font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: Roboto;
 }
 nav .menu .container_plats .info_menu .plat_prix .prix_name {
   display: flex;
