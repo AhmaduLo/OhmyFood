@@ -316,7 +316,7 @@ nav .container_restau .restau_img .info_restau .fa-heart {
   cursor: pointer;
 }
 nav .container_restau .restau_img .info_restau .fa-heart:hover {
-  color: #9356DC;
+  color: hsl(293, 92%, 62%);
 }
 
 footer {
